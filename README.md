@@ -1,5 +1,6 @@
 # 银行账户管理系统
 项目结构图
+```json
 bankManageSystem/
 │
 ├── 📁 src/
@@ -70,6 +71,7 @@ bankManageSystem/
 ├── start.sh                            # 启动脚本（Docker 构建）
 ├── README.md                           # 项目说明文档
 └── LICENSE                             # 开源协议（如 MIT）
+```
 
 ## 📌  项目概述
 本项目为一个基于springboot 框架设计的轻量级银行账户管理系统，支持以下能力：
