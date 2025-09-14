@@ -59,7 +59,7 @@ bankManageSystem/
 │   │
 │   └── 📁 test/
 │       └── 📁 java/
-│           └── com/bank/managementsystem/
+│           └── com/bank/manage/system/
 │               ├── BankAccountServiceTest.java         # 单元测试
 │               ├── BankManageSystemContiPerfTest.java      # 压测测试
 │
