@@ -31,14 +31,14 @@ git clone https://github.com/Tonytan123/bankManageSystem.git
 cd bankManageSystem
 ```
 3. 构建jar包
-   ```shell
+```shell
 mvn clean package
 mvn install
 ```
 构建成功后，jar包位于路径/bankManageSystem/target/bankManageSystem-0.0.1-SNAPSHOT.jar
 5. 构建Docker镜像
    在bankManageSystem目录下执行下面的命令
-   ```shell
+```shell
 chmod +x start.sh
 ./start.sh
 ```
