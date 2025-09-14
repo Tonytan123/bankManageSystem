@@ -1,5 +1,75 @@
 # 银行账户管理系统
-a simple application for managing bank accounts in a banking system
+项目结构图
+bankManageSystem/
+│
+├── 📁 src/
+│   ├── 📁 main/
+│   │   ├── 📁 java/
+│   │   │   └── 📁 com/
+│   │   │       └── 📁 bank/
+                    ...
+│   │   │           └── 📁 system/
+│   │   │               ├── 📁 config/                    # 配置类（Caffeine、H2）
+│   │   │               │   └── CacheConfig.java
+│   │   │               │
+│   │   │               ├── 📁 controller/                # REST 控制器
+│   │   │               │   └── BankController.java
+│   │   │               │
+│   │   │               ├── 📁 service/                   # 业务逻辑层
+│   │   │               │   ├── 📁 convert/  
+│   │   │               │   │   └── BankMangeMapper.java # 实体和vo相互转换类
+│   │   │               │   ├── 📁 impl/                  
+│   │   │               │   │   └── BankManageServiceImpl.java # 实现类
+│   │   │               │   └── BankManageService.java   # 接口
+│   │   │               │
+│   │   │               ├── 📁 repository/                # 数据访问层（JPA / MyBatis）
+│   │   │               │   ├── 📁 entity/                  
+│   │   │               │   │   └── BankAccount.java # 实现类
+│   │   │               │   └── BankAccountRepository.java
+│   │   │               │
+│   │   │               ├── 📁 entity/                    # 实体类
+│   │   │               │   └── BankAccount.java
+│   │   │               │
+│   │   │               ├── 📁 dto/                       # 请求/响应数据传输对象
+│   │   │               │   ├── BaseResponse.java
+│   │   │               │   ├── BankTransferVO.java
+│   │   │               │   ├── CreateBankAccountVO.java
+│   │   │               │   ├── DeleteBankAccountVO.java
+│   │   │               │   └── UpdateBankAccountVO.java
+│   │   │               │
+│   │   │               ├── 📁 exception/                 # 全局异常处理
+│   │   │               │   ├── GlobalExceptionHandler.java
+│   │   │               │   └── BankException.java
+│   │   │               │
+│   │   │               ├── 📁 common/                      # 公用层
+│   │   │               │   ├── 📁 exception/                  
+│   │   │               │   │   └── BusinessException.java 
+│   │   │               │   ├── AccountStatus.java # 枚举类
+│   │   │               │   ├── ErrorCode.java # 枚举类
+│   │   │               │   ├── GlobalExceptionHandler.java # 错误处理类
+│   │   │               │   ├── PageRes.java # 分页类
+│   │   │               │   └── ResultUtils.java # 工具类
+│   │   │               │
+│   │   │               └── BankManagementSystemApplication.java  # 启动类
+│   │   │
+│   │   └── 📁 resources/
+│   │       ├── 📁 static/              # 静态资源（如 Swagger UI）
+│   │       └── application.yaml         # 主配置文件
+│   │
+│   └── 📁 test/
+│       └── 📁 java/
+│           └── com/bank/managementsystem/
+│               ├── BankAccountServiceTest.java         # 单元测试
+│               ├── BankManageSystemContiPerfTest.java      # 压测测试
+│
+├── 📁 target/                          # Maven 构建输出（编译后自动生成）
+│   └── bankManageSystem-0.0.1-SNAPSHOT.jar
+│
+├── Dockerfile                      # Docker 相关文件
+├── pom.xml                             # Maven 构建配置
+├── start.sh                            # 启动脚本（Docker 构建）
+├── README.md                           # 项目说明文档
+└── LICENSE                             # 开源协议（如 MIT）
 
 ## 📌  项目概述
 本项目为一个基于springboot 框架设计的轻量级银行账户管理系统，支持以下能力：
