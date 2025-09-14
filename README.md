@@ -10,7 +10,7 @@ a simple application for managing bank accounts in a banking system
 - ✅ 查看特定银行账户的详情
 - ✅ 在两个账户之间转账
 - ✅ 错误处理和验证
-- ✅ 单元测试
+- ✅ 单元测试&压力测试
 -----
 ## 📦  技术栈使用
 | 模块 |     工具     | 说明                     |
