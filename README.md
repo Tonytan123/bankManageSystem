@@ -1,4 +1,4 @@
-# bankManageSystem
+# 银行账户管理系统
 a simple application for managing bank accounts in a banking system
 
 ## 📌  项目概述
