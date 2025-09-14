@@ -57,4 +57,7 @@ mvn test
 -----
 
 ## 📖 API 文档
-
+### 1. 创建银行账号
+-- PATH： /bank/account/manage/v1/createBankAccount
+-- METHOD： > POST
+-- Application: JSON
