@@ -58,6 +58,19 @@ mvn test
 
 ## 📖 API 文档
 ### 1. 创建银行账号
--- PATH： /bank/account/manage/v1/createBankAccount
--- METHOD： > POST
--- Application: JSON
+- PATH： /bank/account/manage/v1/createBankAccount
+- METHOD：  POST
+- Content： Application/JSON
+- RequestBody
+```json
+{
+    "accountHolderName":"tucker", #用户名
+    "contactNumber":"123456789", #联系电话号码
+    "idCard": "1234567890", #身份证号
+    "bankCardNumber" : "123456788890", #银行卡号
+    "userId":"1111111", # 用户id
+    "emailAddress": "", # 邮箱地址
+    "balance" : "1.22", #账户余额
+    "description" : "新增账户" #简要描述
+}
+```
