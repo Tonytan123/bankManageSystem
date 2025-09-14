@@ -43,5 +43,5 @@ mvn install
 chmod +x start.sh
 ./start.sh
 ```
-4. 访问服务api
- 启动成功之后，通过http://localhost:8080 访问api
+4. 访问服务api 
+启动成功之后，通过http://localhost:8080 访问api
