@@ -2,7 +2,7 @@
 a simple application for managing bank accounts in a banking system
 
 ## 📌  项目概述
-本项目为一个基于springboot 框架设计的轻量级银行交易管理系统，支持以下能力：
+本项目为一个基于springboot 框架设计的轻量级银行账户管理系统，支持以下能力：
 - ✅ 创建银行账户
 - ✅ 删除银行账户
 - ✅ 修改银行账户详情（例如，账户持有人姓名、联系信息）
