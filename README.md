@@ -46,3 +46,11 @@ chmod +x start.sh
 ```
 ### 4. 访问服务api 
 启动成功之后，通过http://localhost:8080 访问api
+
+## 🧪 测试
+执行下面命令，执行所有测试任务
+```shell
+mvn test
+```
+## 📖 API 文档
+
