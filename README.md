@@ -20,5 +20,6 @@ a simple application for managing bank accounts in a banking system
 | 缓存    | Caffeine     | 缓存实现                     | 
 |项目构建 | Maven     | 项目构建                     |
 | 容器化   | docker     | 用于打包项目，方便上线              |
-| 测试工具| mokito + Junit5    | 用于本地单元测试                 |
+| 单元测试| mokito + Junit5    | 用于本地单元测试                 |
+| 压力测试| ContiPerf | 用于本地压力测试                 |
 ------
