@@ -293,21 +293,8 @@ mvn test
 ```json
 {
     "code": 200,
-    "data": {
-        "id": 1,
-        "userUid": "1111111",
-        "idCard": "1234567890",
-        "accountHolderName": "tucker",
-        "contactNumber": "123456789",
-        "bankCardNumber": "123456788890",
-        "balance": 1.22,
-        "status": "ACTIVE",
-        "description": "新增账户",
-        "emailAddress": "",
-        "createdAt": "2025-09-14T15:07:34.6885039",
-        "updatedAt": "2025-09-14T15:07:34.6885039"
-    },
+    "data": null,
     "message": "ok",
-    "description": ""
+    "description": "transfer cash successfully"
 }
 ```
