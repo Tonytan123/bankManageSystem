@@ -30,17 +30,18 @@ a simple application for managing bank accounts in a banking system
 git clone https://github.com/Tonytan123/bankManageSystem.git
 cd bankManageSystem
 ```
-3. 构建jar包
+2. 构建jar包
 ```shell
 mvn clean package
 mvn install
 ```
 构建成功后，jar包位于路径/bankManageSystem/target/bankManageSystem-0.0.1-SNAPSHOT.jar
-5. 构建Docker镜像
+
+3. 构建Docker镜像
    在bankManageSystem目录下执行下面的命令
 ```shell
 chmod +x start.sh
 ./start.sh
 ```
-6. 访问服务api
+4. 访问服务api
  启动成功之后，通过http://localhost:8080 访问api
