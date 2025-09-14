@@ -74,3 +74,168 @@ mvn test
     "description" : "新增账户" #简要描述
 }
 ```
+- Response
+```json
+{
+    "code": 200,
+    "data": {
+        "id": 1,
+        "userUid": "1111111",
+        "idCard": "1234567890",
+        "accountHolderName": "tucker",
+        "contactNumber": "123456789",
+        "bankCardNumber": "123456788890",
+        "balance": 1.22,
+        "status": "ACTIVE",
+        "description": "新增账户",
+        "emailAddress": "",
+        "createdAt": "2025-09-14T15:07:34.6885039",
+        "updatedAt": "2025-09-14T15:07:34.6885039"
+    },
+    "message": "ok",
+    "description": ""
+}
+```
+
+### 2. 更新银行账号
+- PATH： /bank/account/manage/v1/updateBankAccount
+- METHOD：  POST
+- Content： Application/JSON
+- RequestBody
+```json
+{
+    "accountHolderName":"tucker", #用户名
+    "contactNumber":"123456789", #联系电话号码
+    "idCard": "1234567890", #身份证号
+    "bankCardNumber" : "123456788890", #银行卡号
+    "userId":"1111111", # 用户id
+    "emailAddress": "", # 邮箱地址
+    "balance" : "1.22", #账户余额
+    "description" : "新增账户", #简要描述
+    "status": "ACTIVE" # 银行卡状态
+}
+```
+- Response
+```json
+{
+    "code": 200,
+    "data": null,
+    "message": "ok",
+    "description": "update success"
+}
+```
+
+### 3. 删除银行账号
+- PATH： /bank/account/manage/v1/deleteBankAccount
+- METHOD：  POST
+- Content： Application/JSON
+- RequestBody
+```json
+{
+    "bankCardNumber" : "123456788890" #银行卡号
+}
+```
+- Response
+```json
+{
+    "code": 200,
+    "data": null,
+    "message": "ok",
+    "description": "delete success"
+}
+```
+
+### 3. 列出用户银行账号分页
+- PATH： /bank/account/manage/v1/getBankAccountPage/userId/{userId}?pageNo=#{pageNo}&&pageSize=#{pageSize}
+- METHOD：  GET
+- Content： Application/JSON
+- Response
+```json
+{
+    "code": 200,
+    "data": {
+        "page": 1, # 当前所在页数
+        "pageSize": 10, #当前页数包含记录数量
+        "totalPage": 1, #总共多少页
+        "total": 1, #记录总数
+        "data": [
+            {
+                "accountHolderName": "tucker",
+                "contactNumber": "123456789",
+                "idCard": "1234567890",
+                "emailAddress": "",
+                "balance": 1.22,
+                "description": "新增账户",
+                "bankCardNumber": "123456788890",
+                "userId": "1111111"
+            }
+        ],
+        "first": false,
+        "last": true
+    },
+    "message": "ok",
+    "description": ""
+}
+```
+
+### 4. 列出用户银行账号详情
+- PATH： /bank/account/manage/v1/getBankAccountDetail/bankCardNumber/{bankCardNumber}
+- METHOD：  GET
+- Content： Application/JSON
+- Response
+```json
+    "code": 200,
+    "data": {
+        "id": 1,
+        "userUid": "1111111",
+        "idCard": "1234567890",
+        "accountHolderName": "tucker",
+        "contactNumber": "123456789",
+        "bankCardNumber": "123456788890",
+        "balance": 1.22,
+        "status": "ACTIVE",
+        "description": "新增账户",
+        "emailAddress": "",
+        "createdAt": "2025-09-14T15:07:34.6885039",
+        "updatedAt": "2025-09-14T15:07:34.6885039"
+    },
+    "message": "ok",
+    "description": ""
+```
+
+### 5. 不同账号进行相互转账
+- PATH： /bank/account/manage/v1/bankTransfer
+- METHOD：  POST
+- Content： Application/JSON
+- RequestBody
+```json
+{
+    "sendAccountHolderName":"tucker", # 转出方
+    "sendBankCardNumber":"123456788890", #转出方银行账号
+    "amount":"1", # 转出额度
+    "receiveAccountHolderName":"tony", # 转入方
+    "receiveBankCardNumber":"123456788899" # 转入方银行账号
+}
+```
+- Response
+```json
+{
+    "code": 200,
+    "data": {
+        "id": 1,
+        "userUid": "1111111",
+        "idCard": "1234567890",
+        "accountHolderName": "tucker",
+        "contactNumber": "123456789",
+        "bankCardNumber": "123456788890",
+        "balance": 1.22,
+        "status": "ACTIVE",
+        "description": "新增账户",
+        "emailAddress": "",
+        "createdAt": "2025-09-14T15:07:34.6885039",
+        "updatedAt": "2025-09-14T15:07:34.6885039"
+    },
+    "message": "ok",
+    "description": ""
+}
+```
