@@ -18,8 +18,8 @@ a simple application for managing bank accounts in a banking system
 | 后端框架 | Spring Boot | 用于快速构建restful接口    | 
 | 数据库| H2 Database     | 嵌入式数据库                     | 
 | 缓存    | Caffeine     | 缓存实现                     | 
-|项目构建 | Maven     | 项目构建                     |
-| 容器化   | Docker     | 用于打包项目，方便上线              |
+|项目构建 | Maven     | 项目构建                   |
+| 容器化   | Docker     | 快速环境部署             |
 | 单元测试| Mokito + Junit5    | 用于本地单元测试                 |
 | 压力测试| ContiPerf | 用于本地压力测试                 |
 ------
