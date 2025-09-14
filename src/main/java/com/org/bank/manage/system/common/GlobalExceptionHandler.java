@@ -2,6 +2,7 @@ package com.org.bank.manage.system.common;
 
 
 import com.org.bank.manage.system.common.exception.BusinessException;
+import com.org.bank.manage.system.request.BaseResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.converter.HttpMessageNotReadableException;
@@ -9,8 +10,6 @@ import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-
-import java.nio.file.AccessDeniedException;
 
 import static com.org.bank.manage.system.common.ErrorCode.FAIL;
 

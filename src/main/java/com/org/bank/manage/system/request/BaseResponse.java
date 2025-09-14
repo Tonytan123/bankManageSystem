@@ -1,5 +1,6 @@
-package com.org.bank.manage.system.common;
+package com.org.bank.manage.system.request;
 
+import com.org.bank.manage.system.common.ErrorCode;
 import lombok.Data;
 
 import java.io.Serializable;

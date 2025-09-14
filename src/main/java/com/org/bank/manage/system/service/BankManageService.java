@@ -1,6 +1,6 @@
 package com.org.bank.manage.system.service;
 
-import com.org.bank.manage.system.common.BaseResponse;
+import com.org.bank.manage.system.request.BaseResponse;
 import com.org.bank.manage.system.request.BankTransferVO;
 import com.org.bank.manage.system.request.CreateBankAccountVO;
 import com.org.bank.manage.system.request.DeleteBankAccountVO;

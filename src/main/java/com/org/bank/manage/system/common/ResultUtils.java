@@ -1,6 +1,6 @@
 package com.org.bank.manage.system.common;
 
-import cn.hutool.http.HttpStatus;
+import com.org.bank.manage.system.request.BaseResponse;
 
 /**
  * @author tucker

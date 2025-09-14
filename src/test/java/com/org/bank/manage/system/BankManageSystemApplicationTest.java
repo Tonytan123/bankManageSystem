@@ -1,7 +1,7 @@
 package com.org.bank.manage.system;
 
 import com.org.bank.manage.system.common.AccountStatus;
-import com.org.bank.manage.system.common.BaseResponse;
+import com.org.bank.manage.system.request.BaseResponse;
 import com.org.bank.manage.system.common.ErrorCode;
 import com.org.bank.manage.system.common.PageRes;
 import com.org.bank.manage.system.common.exception.BusinessException;
@@ -12,7 +12,6 @@ import com.org.bank.manage.system.request.CreateBankAccountVO;
 import com.org.bank.manage.system.request.DeleteBankAccountVO;
 import com.org.bank.manage.system.request.UpdateBankAccountVO;
 import com.org.bank.manage.system.service.impl.BankManageServiceImpl;
-import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

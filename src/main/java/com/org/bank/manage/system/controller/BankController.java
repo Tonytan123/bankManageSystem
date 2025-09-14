@@ -1,13 +1,12 @@
 package com.org.bank.manage.system.controller;
 
-import com.org.bank.manage.system.common.BaseResponse;
+import com.org.bank.manage.system.request.BaseResponse;
 import com.org.bank.manage.system.request.BankTransferVO;
 import com.org.bank.manage.system.request.CreateBankAccountVO;
 import com.org.bank.manage.system.request.DeleteBankAccountVO;
 import com.org.bank.manage.system.request.UpdateBankAccountVO;
 import com.org.bank.manage.system.service.BankManageService;
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
