@@ -3,10 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.org.bank.manage.system</groupId>
-    <artifactId>banking</artifactId>
+    <artifactId>bankManageSystem</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>banking</name>
-    <description>banking</description>
+    <name>bankManageSystem</name>
+    <description>bankManageSystem</description>
     <properties>
         <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
