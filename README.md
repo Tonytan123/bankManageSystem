@@ -44,7 +44,7 @@ bankManageSystem/
 │   │   │               │
 │   │   │               ├── 📁 common/                      # 公用层
 │   │   │               │   ├── 📁 exception/                  
-│   │   │               │   │   └── BusinessException.java 
+│   │   │               │   │   └── BusinessException.java # 包装错误类
 │   │   │               │   ├── AccountStatus.java # 枚举类
 │   │   │               │   ├── ErrorCode.java # 枚举类
 │   │   │               │   ├── GlobalExceptionHandler.java # 错误处理类
