@@ -61,7 +61,7 @@ bankManageSystem/
 │       └── 📁 java/
 │           └── com/bank/manage/system/
 │               ├── BankAccountServiceTest.java         # 单元测试
-│               ├── BankManageSystemContiPerfTest.java      # 压测测试
+│               └── BankManageSystemContiPerfTest.java      # 压测测试
 │
 ├── 📁 target/                          # Maven 构建输出（编译后自动生成）
 │   └── bankManageSystem-0.0.1-SNAPSHOT.jar
